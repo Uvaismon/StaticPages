@@ -84,3 +84,8 @@ h1 {
 #grid :nth-child(odd) {
 	background-color: #ffffff;
 }
+
+#Github_link {
+    position: absolute;
+    bottom: 30px;
+}
