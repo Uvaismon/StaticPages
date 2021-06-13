@@ -1,0 +1,86 @@
+body {
+    background-color: #fffdd0;
+    padding-left: 30px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    width: fit-content;
+    border: 2px solid red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#solve,
+#clear {
+    margin-left: 30px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+#solve:hover,
+#clear:hover {
+    background-color: antiquewhite;
+    transform: scale(1.05) perspective(1px);
+}
+
+h1 {
+    color: teal;
+}
+
+#message_box {
+    display: none;
+    color: red;
+    font-size: 24px;
+}
+
+#controls {
+    display: none;
+    padding-top: 20px;
+}
+
+#grid input {
+	padding: 0;
+    border: 1px solid cyan;
+}
+
+#grid :nth-child(3n + 1) {
+    border-left: 1px solid red;
+}
+
+#grid :nth-child(3n + 3) {
+    border-right: 1px solid red;
+}
+
+#grid :nth-child(n + 19):nth-child(-n + 27),
+#grid :nth-child(n + 46):nth-child(-n + 54),
+#grid :nth-child(n + 73):nth-child(-n + 81) {
+    border-bottom: 1px solid red;
+}
+
+#grid :nth-child(n + 28):nth-child(-n + 36),
+#grid :nth-child(n + 55):nth-child(-n + 63),
+#grid :nth-child(n + 1):nth-child(-n + 9) {
+    border-top: 1px solid red;
+}
+
+
+#grid :nth-child(even) {
+	background-color: #f8f8ff;
+}
+
+#grid :nth-child(odd) {
+	background-color: #ffffff;
+}
